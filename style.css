@@ -1,7 +1,7 @@
 :root {
   --color-bg: #0d1117;
   --color-text: #c9d1d9;
-  --color-link: #58a6ff;
+  --accent: #58a6ff;
   --color-muted: #8b949e;
   --color-border: #30363d;
 }
@@ -9,7 +9,7 @@
 [data-theme="light"] {
   --color-bg: #fff;
   --color-text: #1f2328;
-  --color-link: #0969da;
+  --accent: #0969da;
   --color-muted: #59636e;
   --color-border: #d1d9e0;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 a {
-  color: var(--color-link);
+  color: var(--accent);
 }
 
 footer {
