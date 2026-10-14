@@ -2,6 +2,8 @@
 
 A simple hello-world web app.
 
+![Screenshot of the hello-web page in the dark theme](docs/screenshot.png)
+
 ## Run / view
 
 This is a static page with no build step.
