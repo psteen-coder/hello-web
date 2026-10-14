@@ -6,6 +6,8 @@
 
   var KEY = "clockFormat";
   var greetingEl = document.getElementById("greeting");
+  var copyBtn = document.getElementById("copy-greeting");
+  var copyStatus = document.getElementById("copy-status");
   var nameInput = document.getElementById("visitor-name");
   var NAME_KEY = "visitorName";
   var MAX_NAME = 50;
@@ -97,6 +99,30 @@
       }
       renderButton();
       tick();
+    });
+  }
+
+  if (copyBtn && greetingEl) {
+    copyBtn.addEventListener("click", function () {
+      var text = greetingEl.textContent || "";
+      function feedback(msg) {
+        if (copyStatus) copyStatus.textContent = msg;
+        setTimeout(function () {
+          if (copyStatus) copyStatus.textContent = "";
+        }, 2000);
+      }
+      if (!navigator.clipboard || !navigator.clipboard.writeText) {
+        feedback("Clipboard unavailable");
+        return;
+      }
+      navigator.clipboard.writeText(text).then(
+        function () {
+          feedback("Copied");
+        },
+        function () {
+          feedback("Clipboard unavailable");
+        },
+      );
     });
   }
 
