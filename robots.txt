@@ -1,0 +1,7 @@
+# robots.txt for hello-web
+User-agent: *
+Allow: /
+
+# TODO: replace example.com with the real site URL once a deploy URL exists.
+# The Sitemap directive must be an absolute URL.
+Sitemap: https://example.com/sitemap.xml
