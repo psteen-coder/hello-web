@@ -44,3 +44,13 @@ Formatting is handled by [Prettier](https://prettier.io/) with default settings,
 CSS is linted with [Stylelint](https://stylelint.io/) using `stylelint-config-standard`.
 
 - Lint CSS: `npm run lint:css`
+
+## Contributing
+
+1. Create a branch off `main`: `git checkout -b my-change`
+2. Install dev dependencies: `npm install`
+3. Make your change, then run the same checks as CI, plus formatting:
+   - `npm run format` (or `npm run format:check`)
+   - `npm run lint:css`
+   - `npx html-validate "**/*.html"`
+4. Commit, push the branch, and open a pull request into `main`. The `validate` check must pass.
