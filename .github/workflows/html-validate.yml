@@ -19,7 +19,5 @@ jobs:
           cache: npm
       - name: Install dev dependencies
         run: npm ci
-      - name: Validate HTML
-        run: npx --yes html-validate@9 "**/*.html"
-      - name: Lint CSS
-        run: npx stylelint "**/*.css"
+      - name: Lint (HTML + CSS)
+        run: npm run lint
