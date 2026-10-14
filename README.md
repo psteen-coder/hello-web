@@ -9,7 +9,7 @@ A simple hello-world web app.
 This is a static page with no build step.
 
 - Open `index.html` directly in a browser, or
-- Serve it locally: `npm run serve` and visit http://127.0.0.1:8080 (set `PORT` to change the port)
+- Serve it locally: `npm run serve` and visit <http://127.0.0.1:8080> (set `PORT` to change the port)
 
 ## Project structure
 
@@ -51,6 +51,6 @@ CSS is linted with [Stylelint](https://stylelint.io/) using `stylelint-config-st
 2. Install dev dependencies: `npm install`
 3. Make your change, then run the same checks as CI, plus formatting:
    - `npm run format` (or `npm run format:check`)
-   - `npm run lint` (html-validate + stylelint)
+   - `npm run lint` (html-validate + stylelint + markdownlint)
    - `npm test`
 4. Commit, push the branch, and open a pull request into `main`. The `validate` check must pass.
