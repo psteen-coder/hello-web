@@ -23,6 +23,8 @@ jobs:
         run: npm run format:check
       - name: Lint (HTML, CSS, Markdown)
         run: npm run lint
+      - name: Browser smoke test (Playwright, Chromium)
+        run: npx playwright install --with-deps chromium && npm test
       - name: Check internal links (lychee, offline)
         uses: lycheeverse/lychee-action@v2
         with:
