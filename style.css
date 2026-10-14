@@ -52,3 +52,8 @@ footer {
   font-size: 0.875rem;
   cursor: pointer;
 }
+
+.clock {
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
