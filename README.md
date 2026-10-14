@@ -9,7 +9,7 @@ A simple hello-world web app.
 This is a static page with no build step.
 
 - Open `index.html` directly in a browser, or
-- Serve it locally: `npm run serve` and visit http://127.0.0.1:8080 (set `PORT` to change the port)
+- Serve it locally: `npm run serve` and visit <http://127.0.0.1:8080> (set `PORT` to change the port)
 
 ## Project structure
 
