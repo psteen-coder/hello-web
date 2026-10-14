@@ -143,4 +143,14 @@
   renderButton();
   tick();
   setInterval(tick, 1000);
+
+  window.__helloClock = {
+    reset: function () {
+      format = null;
+      visitorName = "";
+      if (nameInput) nameInput.value = "";
+      renderButton();
+      tick();
+    },
+  };
 })();

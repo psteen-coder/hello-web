@@ -31,4 +31,5 @@
   });
 
   render();
+  window.__helloTheme = { render: render, current: current };
 })();
