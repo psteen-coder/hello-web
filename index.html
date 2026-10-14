@@ -8,11 +8,18 @@
     <title>Hello, world</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <script>
-      try {
-        if (localStorage.getItem("theme") === "light") {
+      (function () {
+        var saved = null;
+        try {
+          saved = localStorage.getItem("theme");
+        } catch (e) {}
+        var prefersLight =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: light)").matches;
+        if (saved === "light" || (saved !== "dark" && prefersLight)) {
           document.documentElement.setAttribute("data-theme", "light");
         }
-      } catch (e) {}
+      })();
     </script>
     <link rel="stylesheet" href="style.css" />
   </head>
