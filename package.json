@@ -9,6 +9,7 @@
     "serve": "node scripts/serve.mjs"
   },
   "devDependencies": {
+    "html-validate": "9.7.1",
     "prettier": "3.9.10",
     "stylelint": "16.26.1",
     "stylelint-config-standard": "36.0.1"
