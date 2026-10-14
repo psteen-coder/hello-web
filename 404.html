@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Page not found." />
+    <meta name="theme-color" content="#0d1117" />
+    <title>Page not found</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>
+      try {
+        if (localStorage.getItem("theme") === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button type="button" id="theme-toggle" class="theme-toggle">
+      Switch theme
+    </button>
+    <h1>Page not found</h1>
+    <p>Sorry, that page doesn't exist.</p>
+    <p><a href="index.html">Back to home</a></p>
+    <footer>
+      <p>
+        &copy; 2026 psteen-coder &middot;
+        <a href="https://github.com/psteen-coder/hello-web/blob/main/LICENSE"
+          >MIT License</a
+        >
+      </p>
+    </footer>
+    <script src="theme.js"></script>
+  </body>
+</html>
