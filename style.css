@@ -98,6 +98,14 @@ main:focus {
   cursor: pointer;
 }
 
+.noscript {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
 .clock {
   color: var(--color-muted);
   font-variant-numeric: tabular-nums;
