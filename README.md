@@ -16,3 +16,9 @@ Formatting is handled by [Prettier](https://prettier.io/) with default settings,
 - Install dev dependencies: `npm install`
 - Format: `npm run format`
 - Check: `npm run format:check`
+
+## Linting
+
+CSS is linted with [Stylelint](https://stylelint.io/) using `stylelint-config-standard`.
+
+- Lint CSS: `npm run lint:css`

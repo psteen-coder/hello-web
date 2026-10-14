@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "lint:css": "stylelint \"**/*.css\""
   },
   "devDependencies": {
     "prettier": "3.9.10",
