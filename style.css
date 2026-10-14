@@ -137,3 +137,12 @@ input:focus:not(:focus-visible) {
     color: #444;
   }
 }
+
+.clock-line {
+  color: var(--color-muted);
+}
+
+.tz {
+  margin-left: 0.35em;
+  font-size: 0.9em;
+}
