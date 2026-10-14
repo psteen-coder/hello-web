@@ -1,3 +1,10 @@
+:root {
+  --color-bg: #0d1117;
+  --color-text: #c9d1d9;
+  --color-link: #58a6ff;
+  --color-muted: #8b949e;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -6,19 +13,19 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #0d1117;
-  color: #c9d1d9;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #58a6ff;
+  color: var(--color-link);
 }
 
 footer {
   position: absolute;
   bottom: 1rem;
   font-size: 0.875rem;
-  color: #8b949e;
+  color: var(--color-muted);
 }
