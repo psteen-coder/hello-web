@@ -3,12 +3,16 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "html-validate \"**/*.html\"",
+    "lint:css": "stylelint \"**/*.css\"",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint:css": "stylelint \"**/*.css\"",
+    "test": "npm run format:check && npm run lint",
     "serve": "node scripts/serve.mjs"
   },
   "devDependencies": {
+    "html-validate": "9.7.1",
     "prettier": "3.9.10",
     "stylelint": "16.26.1",
     "stylelint-config-standard": "36.0.1"
