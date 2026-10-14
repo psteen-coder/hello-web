@@ -52,5 +52,5 @@ CSS is linted with [Stylelint](https://stylelint.io/) using `stylelint-config-st
 3. Make your change, then run the same checks as CI, plus formatting:
    - `npm run format` (or `npm run format:check`)
    - `npm run lint` (html-validate + stylelint + markdownlint)
-   - `npm test`
+   - `npm test` (Playwright browser smoke test)
 4. Commit, push the branch, and open a pull request into `main`. The `validate` check must pass.
