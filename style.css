@@ -57,6 +57,13 @@ footer {
   font-size: 0.95rem;
 }
 
+.site-nav a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
 .theme-toggle {
   position: absolute;
   top: 1rem;
