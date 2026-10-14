@@ -9,7 +9,9 @@
 
   function render() {
     var next = current() === "light" ? "dark" : "light";
-    button.textContent = "Switch to " + next + " theme";
+    var label = "Switch to " + next + " theme";
+    button.textContent = label;
+    button.setAttribute("aria-label", label);
     button.setAttribute("aria-pressed", String(current() === "light"));
   }
 
