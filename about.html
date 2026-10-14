@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <nav class="site-nav" aria-label="Site">
       <a href="index.html">Home</a>
       <a href="about.html" aria-current="page">About</a>
@@ -38,25 +39,27 @@
     >
       Switch theme
     </button>
-    <h1>About hello-web</h1>
-    <p>
-      hello-web is a small static site. The home page greets you by time of day,
-      shows a live clock with your timezone, and can remember a name, a 12- or
-      24-hour clock preference, and a light or dark theme (following the OS
-      until you choose).
-    </p>
-    <p>
-      There is also this about page and a 404 page, all sharing one stylesheet
-      with keyboard focus styles, reduced-motion support, a mobile breakpoint
-      and print styles. Preferences stay in your browser; nothing is sent
-      anywhere.
-    </p>
-    <p>
-      The project is MIT-licensed. Development uses Prettier, Stylelint,
-      html-validate, markdownlint, an offline link checker and Playwright smoke
-      tests, all run in GitHub Actions on every pull request.
-    </p>
-    <p><a href="#top">Back to top</a></p>
+    <main id="main" tabindex="-1">
+      <h1>About hello-web</h1>
+      <p>
+        hello-web is a small static site. The home page greets you by time of
+        day, shows a live clock with your timezone, and can remember a name, a
+        12- or 24-hour clock preference, and a light or dark theme (following
+        the OS until you choose).
+      </p>
+      <p>
+        There is also this about page and a 404 page, all sharing one stylesheet
+        with keyboard focus styles, reduced-motion support, a mobile breakpoint
+        and print styles. Preferences stay in your browser; nothing is sent
+        anywhere.
+      </p>
+      <p>
+        The project is MIT-licensed. Development uses Prettier, Stylelint,
+        html-validate, markdownlint, an offline link checker and Playwright
+        smoke tests, all run in GitHub Actions on every pull request.
+      </p>
+      <p><a href="#top">Back to top</a></p>
+    </main>
     <footer>
       <p>
         &copy; 2026 psteen-coder &middot;

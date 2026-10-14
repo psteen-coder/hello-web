@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <nav class="site-nav" aria-label="Site">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -38,25 +39,27 @@
     >
       Switch theme
     </button>
-    <h1>Changelog</h1>
-    <p>
-      Notable changes, newest first. The full history is in
-      <a href="CHANGELOG.md">CHANGELOG.md</a>.
-    </p>
-    <h2>Unreleased</h2>
-    <ul>
-      <li>
-        Preferences: light/dark theme (OS default), 12/24-hour clock, visitor
-        name, and a Reset preferences button
-      </li>
-      <li>Live clock with timezone, time-of-day greeting, and copy button</li>
-      <li>About and 404 pages, favicon, footer, a11y and print styles</li>
-      <li>
-        Prettier, Stylelint, html-validate, markdownlint, lychee, Playwright, a
-        tiny local server, and matching CI
-      </li>
-    </ul>
-    <p><a href="#top">Back to top</a></p>
+    <main id="main" tabindex="-1">
+      <h1>Changelog</h1>
+      <p>
+        Notable changes, newest first. The full history is in
+        <a href="CHANGELOG.md">CHANGELOG.md</a>.
+      </p>
+      <h2>Unreleased</h2>
+      <ul>
+        <li>
+          Preferences: light/dark theme (OS default), 12/24-hour clock, visitor
+          name, and a Reset preferences button
+        </li>
+        <li>Live clock with timezone, time-of-day greeting, and copy button</li>
+        <li>About and 404 pages, favicon, footer, a11y and print styles</li>
+        <li>
+          Prettier, Stylelint, html-validate, markdownlint, lychee, Playwright,
+          a tiny local server, and matching CI
+        </li>
+      </ul>
+      <p><a href="#top">Back to top</a></p>
+    </main>
     <footer>
       <p>
         &copy; 2026 psteen-coder &middot;

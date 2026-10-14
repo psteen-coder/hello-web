@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <nav class="site-nav" aria-label="Site">
       <a href="index.html" aria-current="page">Home</a>
       <a href="about.html">About</a>
@@ -38,39 +39,45 @@
     >
       Switch theme
     </button>
-    <h1 id="greeting">Hello, world</h1>
-    <p>
-      <button type="button" id="copy-greeting" class="small-button">
-        Copy greeting
-      </button>
-      <span id="copy-status" class="visually-hidden" aria-live="polite"></span>
-    </p>
-    <p class="clock-line">
-      <time id="now" class="clock"></time> <span id="tz" class="tz"></span>
-    </p>
-    <p class="name-field">
-      <label for="visitor-name">Your name</label>
-      <input
-        type="text"
-        id="visitor-name"
-        class="name-input"
-        maxlength="50"
-        autocomplete="given-name"
-      />
-    </p>
-    <p>
-      <button type="button" id="reset-prefs" class="small-button">
-        Reset preferences
-      </button>
-    </p>
-    <p>
-      <button type="button" id="clock-format" class="small-button">
-        Use 24-hour time
-      </button>
-    </p>
-    <p>
-      <a href="https://github.com/psteen-coder/hello-web">View on GitHub</a>
-    </p>
+    <main id="main" tabindex="-1">
+      <h1 id="greeting">Hello, world</h1>
+      <p>
+        <button type="button" id="copy-greeting" class="small-button">
+          Copy greeting
+        </button>
+        <span
+          id="copy-status"
+          class="visually-hidden"
+          aria-live="polite"
+        ></span>
+      </p>
+      <p class="clock-line">
+        <time id="now" class="clock"></time> <span id="tz" class="tz"></span>
+      </p>
+      <p class="name-field">
+        <label for="visitor-name">Your name</label>
+        <input
+          type="text"
+          id="visitor-name"
+          class="name-input"
+          maxlength="50"
+          autocomplete="given-name"
+        />
+      </p>
+      <p>
+        <button type="button" id="reset-prefs" class="small-button">
+          Reset preferences
+        </button>
+      </p>
+      <p>
+        <button type="button" id="clock-format" class="small-button">
+          Use 24-hour time
+        </button>
+      </p>
+      <p>
+        <a href="https://github.com/psteen-coder/hello-web">View on GitHub</a>
+      </p>
+    </main>
     <footer>
       <p>
         &copy; 2026 psteen-coder &middot;
