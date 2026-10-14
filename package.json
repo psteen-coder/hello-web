@@ -3,9 +3,12 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "html-validate \"**/*.html\"",
+    "lint:css": "stylelint \"**/*.css\"",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint:css": "stylelint \"**/*.css\"",
+    "test": "npm run format:check && npm run lint",
     "serve": "node scripts/serve.mjs"
   },
   "devDependencies": {
