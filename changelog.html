@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Changelog for hello-web." />
+    <meta name="theme-color" content="#0d1117" />
+    <title>Changelog</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        var saved = null;
+        try {
+          saved = localStorage.getItem("theme");
+        } catch (e) {}
+        var prefersLight =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: light)").matches;
+        if (saved === "light" || (saved !== "dark" && prefersLight)) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button
+      type="button"
+      id="theme-toggle"
+      class="theme-toggle"
+      aria-label="Switch theme"
+      aria-pressed="false"
+    >
+      Switch theme
+    </button>
+    <h1>Changelog</h1>
+    <p>
+      Notable changes, newest first. The full history is in
+      <a href="CHANGELOG.md">CHANGELOG.md</a>.
+    </p>
+    <h2>Unreleased</h2>
+    <ul>
+      <li>
+        Preferences: light/dark theme (OS default), 12/24-hour clock, visitor
+        name, and a Reset preferences button
+      </li>
+      <li>Live clock with timezone, time-of-day greeting, and copy button</li>
+      <li>About and 404 pages, favicon, footer, a11y and print styles</li>
+      <li>
+        Prettier, Stylelint, html-validate, markdownlint, lychee, Playwright, a
+        tiny local server, and matching CI
+      </li>
+    </ul>
+    <p><a href="index.html">Home</a> &middot; <a href="about.html">About</a></p>
+    <p><a href="#top">Back to top</a></p>
+    <footer>
+      <p>
+        &copy; 2026 psteen-coder &middot;
+        <a href="https://github.com/psteen-coder/hello-web/blob/main/LICENSE"
+          >MIT License</a
+        >
+      </p>
+    </footer>
+    <script src="theme.js"></script>
+  </body>
+</html>
