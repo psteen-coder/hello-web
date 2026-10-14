@@ -32,3 +32,5 @@ jobs:
             --offline --no-progress --exclude-path node_modules
             './**/*.html' './**/*.md'
           fail: true
+      - name: Accessibility check (Lighthouse CI, score >= 0.9)
+        run: npm run lighthouse
