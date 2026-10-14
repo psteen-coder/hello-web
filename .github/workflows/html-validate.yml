@@ -21,5 +21,5 @@ jobs:
         run: npm ci
       - name: Check formatting (Prettier)
         run: npm run format:check
-      - name: Lint (HTML + CSS)
+      - name: Lint (HTML, CSS, Markdown)
         run: npm run lint
