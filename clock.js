@@ -6,6 +6,19 @@
 
   var KEY = "clockFormat";
   var greetingEl = document.getElementById("greeting");
+  var nameInput = document.getElementById("visitor-name");
+  var NAME_KEY = "visitorName";
+  var MAX_NAME = 50;
+
+  function loadName() {
+    try {
+      return (localStorage.getItem(NAME_KEY) || "").slice(0, MAX_NAME);
+    } catch (e) {
+      return "";
+    }
+  }
+
+  var visitorName = loadName();
 
   function greetingFor(date) {
     var h = date.getHours();
@@ -67,7 +80,9 @@
       );
     }
     if (greetingEl) {
-      greetingEl.textContent = greetingFor(now);
+      // textContent, never innerHTML: names are shown as plain text.
+      greetingEl.textContent =
+        greetingFor(now) + (visitorName ? ", " + visitorName : "");
     }
   }
 
@@ -81,6 +96,20 @@
         // localStorage unavailable: the choice just won't persist.
       }
       renderButton();
+      tick();
+    });
+  }
+
+  if (nameInput) {
+    nameInput.value = visitorName;
+    nameInput.addEventListener("input", function () {
+      visitorName = nameInput.value.trim().slice(0, MAX_NAME);
+      try {
+        if (visitorName) localStorage.setItem(NAME_KEY, visitorName);
+        else localStorage.removeItem(NAME_KEY);
+      } catch (e) {
+        // localStorage unavailable: the name just won't persist.
+      }
       tick();
     });
   }
