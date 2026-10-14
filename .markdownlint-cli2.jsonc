@@ -1,0 +1,8 @@
+{
+  "config": {
+    "default": true,
+    // Line length is left to Prettier / editors.
+    "MD013": false,
+  },
+  "ignores": ["node_modules/**", "LICENSE"],
+}
