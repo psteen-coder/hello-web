@@ -23,3 +23,10 @@ jobs:
         run: npm run format:check
       - name: Lint (HTML, CSS, Markdown)
         run: npm run lint
+      - name: Check internal links (lychee, offline)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --offline --no-progress --exclude-path node_modules
+            './**/*.html' './**/*.md'
+          fail: true
