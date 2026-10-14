@@ -109,3 +109,31 @@ input:focus:not(:focus-visible) {
     right: 1rem;
   }
 }
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #444;
+  }
+
+  .theme-toggle,
+  button {
+    display: none !important;
+  }
+
+  footer {
+    position: static;
+    color: #444;
+  }
+}
