@@ -5,7 +5,8 @@
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint:css": "stylelint \"**/*.css\""
+    "lint:css": "stylelint \"**/*.css\"",
+    "serve": "node scripts/serve.mjs"
   },
   "devDependencies": {
     "prettier": "3.9.10",
