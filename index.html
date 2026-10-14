@@ -7,9 +7,19 @@
     <meta name="theme-color" content="#0d1117" />
     <title>Hello, world</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>
+      try {
+        if (localStorage.getItem("theme") === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      } catch (e) {}
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <button type="button" id="theme-toggle" class="theme-toggle">
+      Switch theme
+    </button>
     <h1>Hello, world</h1>
     <p>
       <a href="https://github.com/psteen-coder/hello-web">View on GitHub</a>
@@ -22,5 +32,6 @@
         >
       </p>
     </footer>
+    <script src="theme.js"></script>
   </body>
 </html>
