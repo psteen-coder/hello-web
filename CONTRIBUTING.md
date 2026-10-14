@@ -2,6 +2,8 @@
 
 Thanks for helping out. Changes go through pull requests into `main`.
 
+By participating you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+
 1. Open or pick an issue describing the change.
 2. Create a branch off `main`: `git checkout -b my-change`
 3. Install dev dependencies: `npm install`
