@@ -88,3 +88,24 @@ input:focus:not(:focus-visible) {
     scroll-behavior: auto !important;
   }
 }
+
+@media (width <= 600px) {
+  body {
+    padding: 4rem 1rem 5rem;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .theme-toggle {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  footer {
+    left: 1rem;
+    right: 1rem;
+  }
+}
