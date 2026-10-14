@@ -1,3 +1,7 @@
 {
-  "extends": ["html-validate:recommended", "html-validate:prettier"]
+  "plugins": ["<rootDir>/scripts/html-validate-plugin.cjs"],
+  "extends": ["html-validate:recommended", "html-validate:prettier"],
+  "rules": {
+    "hello-web/lang-and-charset": "error"
+  }
 }
