@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-maintained. TODO: replace https://example.com/ with the real site URL once a deploy URL exists. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://example.com/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/about.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/changelog.html</loc>
+  </url>
+</urlset>
