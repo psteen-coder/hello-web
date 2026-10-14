@@ -5,6 +5,14 @@
   if (!el) return;
 
   var KEY = "clockFormat";
+  var greetingEl = document.getElementById("greeting");
+
+  function greetingFor(date) {
+    var h = date.getHours();
+    if (h >= 5 && h <= 11) return "Good morning";
+    if (h >= 12 && h <= 17) return "Good afternoon";
+    return "Good evening";
+  }
 
   function loadFormat() {
     try {
@@ -57,6 +65,9 @@
         "title",
         Intl.DateTimeFormat().resolvedOptions().timeZone,
       );
+    }
+    if (greetingEl) {
+      greetingEl.textContent = greetingFor(now);
     }
   }
 
