@@ -1,5 +1,8 @@
 # hello-web
 
+[![CI](https://github.com/psteen-coder/hello-web/actions/workflows/html-validate.yml/badge.svg?branch=main)](https://github.com/psteen-coder/hello-web/actions/workflows/html-validate.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A simple hello-world web app.
 
 ![Screenshot of the hello-web page in the dark theme](docs/screenshot.png)
