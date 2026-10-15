@@ -1,8 +1,8 @@
 name: Deploy to GitHub Pages
 
+# Auto-deploy disabled: GitHub Pages is not enabled for this repo.
+# Run manually from the Actions tab if Pages is turned on later.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
